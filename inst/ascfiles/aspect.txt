@@ -1,0 +1,5 @@
+"Value","Count","NewField1"
+1,537,North
+2,1504,East
+3,1262,South
+4,1076,West
