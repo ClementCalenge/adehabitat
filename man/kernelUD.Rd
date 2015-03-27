@@ -178,7 +178,7 @@ getverticeshr(x, lev = 95)
 
   Seaman, D.E. and Powell, R.A. (1998) \emph{Kernel home range estimation
     program (kernelhr)}. Documentation of the
-  program. \url{ftp://ftp.im.nbs.gov/pub/software/CSE/wsb2695/KERNELHR.ZIP}.
+  program.
 }
 \author{ Clement Calenge \email{clement.calenge@oncfs.gouv.fr} }
 

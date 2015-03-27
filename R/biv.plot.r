@@ -9,8 +9,6 @@
         stop("dfxy should be a data frame")
     if (ncol(dfxy) < 2)
         stop("dfxy should have at least two columns")
-    if (!require(MASS) & kernel)
-        stop("This function needs the package MASS")
     if (missing(pch))
         pch <- 16
     if (missing(cex))

@@ -2,8 +2,6 @@
                        x0=c(0,0), id="A1", burst=id,
                        typeII=TRUE)
 {
-    if (!require(CircStats))
-        stop("package CircStats required")
     if (typeII)
         class(date) <- c("POSIX","POSIXct")
     n <- length(date)
