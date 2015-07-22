@@ -648,7 +648,7 @@ void getpermutation (int *numero, int repet)
      ----------------*/
     for (i=1;i<=n;i++) {
 	GetRNGstate();
-	alea[i] = unif_rand();
+	alea[i] = (1e8)*unif_rand();
 	PutRNGstate();
     }
     
