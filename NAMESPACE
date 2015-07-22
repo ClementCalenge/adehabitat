@@ -2,6 +2,10 @@ useDynLib(adehabitat)
 
 import(graphics,ade4,tkrplot,sp)
 importFrom(shapefiles, convert.to.shapefile)
+importFrom("grDevices", "chull", "contourLines", "getGraphicsEvent", "gray", "grey", "n2mfrow", "rainbow")
+importFrom("methods", "as", "slot")
+importFrom("stats", "approx", "cor", "density", "dist", "embed", "integrate", "mahalanobis", "median", "na.omit", "pchisq", "pnorm", "ppoints", "pt", "qchisq", "qnorm", "qqnorm", "quantile", "rchisq", "rnorm", "runif", "var", "weighted.mean")
+importFrom("utils", "read.table", "select.list")
 exportPattern("^[^\\.]")
 
 S3method(print, ltraj)
