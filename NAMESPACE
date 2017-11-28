@@ -1,4 +1,4 @@
-useDynLib(adehabitat)
+useDynLib(adehabitat, .registration = TRUE)
 
 import(graphics,ade4,tkrplot,sp)
 importFrom(shapefiles, convert.to.shapefile)
@@ -62,6 +62,10 @@ S3method(lowres, kasc)
 
 S3method(qqchi, ltraj)
 S3method(qqchi, default)
+
+S3method(extract, ltraj)
+S3method(assign, ltraj)
+
 
 S3method(subsetmap, asc)
 S3method(subsetmap, kasc)
