@@ -119,7 +119,7 @@
       xyg<-getXYcoords(grid)
       grid[is.na(grid)] <- 0
       date<-as.double(dft$date)-min(as.double(dft$date))
-      toto<-.C("kernelbb", as.double(t(grid)), as.double(xyg$x),
+      toto<-.C("kernelbbc", as.double(t(grid)), as.double(xyg$x),
                as.double(xyg$y), as.integer(ncol(grid)),as.integer(nrow(grid)),
                as.integer(nrow(df)), as.double(sig12), as.double (sig22),
                as.double(df$x), as.double(df$y), as.double(date),

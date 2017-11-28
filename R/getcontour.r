@@ -71,7 +71,7 @@
                        PACKAGE="adehabitat")[[4]]
 
               ## computes the connex components
-              pol<-.C("getcontour", as.double(t(tmp)), as.integer(nrow(tmp)),
+              pol<-.C("getcontourc", as.double(t(tmp)), as.integer(nrow(tmp)),
                       as.integer(ncol(tmp)), integer(toto), integer(toto),
                       as.integer(toto), PACKAGE="adehabitat")
 
@@ -92,4 +92,3 @@
       sorties<-as.area(sorties)
       return(sorties)
   }
-

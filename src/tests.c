@@ -1,7 +1,6 @@
 #include <math.h>
 #include <time.h>
 #include <string.h>
-#include <stdlib.h>
 #include <R.h>
 #include <Rmath.h>
 
@@ -82,7 +81,7 @@ void comptePasNA(double **tab, int *nombre);
 void videNA(double **entree, double **sortie, int *idcons);
 void niche(double **X, double **Y, double *eig, double **mar);
 void mvtfreeman(int *in, int *jn, int *dir, int *np);
-void getcontour(double *grille, int *nlig, int *ncol, int *indicelig, 
+void getcontourc(double *grille, int *nlig, int *ncol, int *indicelig, 
 		int *indicecol, int *lcont);
 void lcontour(double *grille, int *nlig, int *ncol, int *lcont);
 void levels(double *vec, double *lev, int *lvec);
@@ -178,7 +177,7 @@ void randenfar(double *Zr, double *pr, int *nvar, int *npix,
 void integrno(double *XG, double *X1, double *X2, 
 	      double *T, double *sig1,
 	      double *sig2, double *alpha, double *res);
-void kernelbb(double *grille, double *xgri, double *ygri, int *ncolgri,
+void kernelbbc(double *grille, double *xgri, double *ygri, int *ncolgri,
 	      int *nliggri, int *nloc, double *sig1, double *sig2, 
 	      double *xlo, double *ylo, double *Tr, int *controlbox, 
 	      int *nalpha);
@@ -2512,7 +2511,7 @@ void mvtfreeman(int *in, int *jn, int *dir, int *np)
    **************************************************************** */
 
 
-void getcontour(double *grille, int *nlig, int *ncol, int *indicelig, 
+void getcontourc(double *grille, int *nlig, int *ncol, int *indicelig, 
 		int *indicecol, int *lcont)
 {
     /* Declaration of local variables */
@@ -6221,7 +6220,7 @@ void udbbnoeud(double *XG, double **XY, double *T, double *sig1,
 
 
 /* Main Function */
-void kernelbb(double *grille, double *xgri, double *ygri, int *ncolgri,
+void kernelbbc(double *grille, double *xgri, double *ygri, int *ncolgri,
 	      int *nliggri, int *nloc, double *sig1, double *sig2, 
 	      double *xlo, double *ylo, double *Tr, int *controlbox, 
 	      int *nalpha)
@@ -9793,4 +9792,7 @@ void engen2008Ir(double *avr, double *usr, int *nliga, int *nligu,
 
 
 }
+
+
+
 
