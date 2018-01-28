@@ -14,7 +14,7 @@ gdltraj <- function(x, min, max,
         x <- lapply(x, function(y) y[(y$date>min)&(y$date<max),])
     } else {
         x <- lapply(x, function(y) {
-            da <- as.POSIXlt(y$date)[[type]]
+            da <- unclass(as.POSIXlt(y$date))[[type]]
             return(y[(da>=min)&(da<max),])
         })
     }
